@@ -427,12 +427,12 @@ a:focus {
 
 .carousel .carousel-btn .btn:last-child {
     margin-left: 10px;
-    background: #719a0a;
-    border-color: #719a0a;
+    background: var(--color-principal); /* color boton reserva */
+    border-color: var(--color-secundario);
 }
 
 .carousel .carousel-btn .btn:last-child:hover {
-    color: #719a0a;
+    color: var(--color-secundario);
     background: transparent;
 }
 
@@ -939,7 +939,6 @@ a:focus {
     position: relative;
     margin-top: 45px;
     padding-top: 90px;
-    background: rgba(0, 0, 0, 0);
 }
 
 .footer .footer-contact,
