@@ -197,17 +197,32 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/about/about.jpg" alt="Image">
-                            <button type="button" class="btn-play" data-toggle="modal" data-src="https://youtu.be/kxFYAMaukbs?t=26" data-target="#videoModal">
+                            <video id="video" width="360"  height="450" muted autoplay loop>
+                                <source src="img/video.mp4" type="video/mp4">
+                                Tu navegador no soporta este video
+                            </video>
+                            <!-- <button id="playbutton" type="button" class="btn-play" onclick="playVideo()" >
+                                <script>
+                                    function playVideo() {
+                                        document.getElementById('playbutton').play()
+                                    }
+                                </script>
                                 <span></span>
                             </button>
+                            
+                            <img src="img/about/about.jpg" alt="Image">
+                            16:9 aspect ratio 
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=kxFYAMaukbs"></iframe>
+                            </div>-->
+                            
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="about-content">
                             <div class="section-header">
                                 <p>Acerca de nosotros</p>
-                                <h2>Cocina fusión desde 2014.</h2>
+                                <h2>Cocina fusión desde 2014</h2>
                             </div>
                             <div class="about-text">
                                 <p>
@@ -224,6 +239,28 @@
             </div>
         </div>
         <!-- About -->
+        
+        <!-- Video Modal Start-->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>        
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <!--<video width="720"  height="350" muted controls autoplay="false">
+                                <source src="img/video.mp4" type="video/mp4">
+                                Tu navegador no soporta este video
+                            </video>-->
+                            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Video Modal End -->
 
         <!-- Instagram Start -->
         <div class="instagram" id="instagram">
